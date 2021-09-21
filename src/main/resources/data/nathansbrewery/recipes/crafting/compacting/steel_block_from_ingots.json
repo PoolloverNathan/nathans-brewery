@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "iIi",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "tag": "c:steel_ingots"
+    },
+    "I": {
+      "item": "nathansbrewery:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "nathansbrewery:steel_block"
+  }
+}
