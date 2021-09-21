@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "nnn",
+    "nNn",
+    "nnn"
+  ],
+  "key": {
+    "n": {
+      "tag": "c:steel_nuggets"
+    },
+    "N": {
+      "item": "nathansbrewery:steel_nugget"
+    }
+  },
+  "result": {
+    "item": "nathansbrewery:steel_ingot"
+  }
+}

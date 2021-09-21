@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "c:drinkable_potions",
-    "c:lingering_potions",
-    "c:splash_potions"
+    "#c:drinkable_potions",
+    "#c:lingering_potions",
+    "#c:splash_potions"
   ]
 }
