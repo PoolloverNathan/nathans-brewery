@@ -16,12 +16,15 @@ import net.minecraft.util.registry.Registry;
 
 public class NathansBrewery implements ModInitializer {
 
-	public static final Item STEEL_INGOT = new Item(new FabricItemSettings().group(ItemGroup.MISC));
-	public static final Item STEEL_NUGGET = new Item(new FabricItemSettings().group(ItemGroup.MISC));
-	public static final Block STEEL_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).hardness(10).breakByTool(FabricToolTags.PICKAXES, 2));
-	public static final Item CRUSHED_COAL = new Item(new FabricItemSettings().group(ItemGroup.MISC));
-	public static final Item TINY_CRUSHED_COAL = new Item(new FabricItemSettings().group(ItemGroup.MISC));
-	public static final Item QUILL = new Item(new FabricItemSettings().group(ItemGroup.TOOLS));
+	public static final String MODID = "nathansbrewery";
+	
+	public static final Item  STEEL_INGOT       = new Item     (new FabricItemSettings().group(ItemGroup.MISC));
+	public static final Item  STEEL_NUGGET      = new Item     (new FabricItemSettings().group(ItemGroup.MISC));
+	public static final Block STEEL_BLOCK       = new Block    (FabricBlockSettings.of(Material.METAL).hardness(10).breakByTool(FabricToolTags.PICKAXES, 2));
+	public static final Item  STEEL_BLOCK_i     = new BlockItem(STEEL_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
+	public static final Item  CRUSHED_COAL      = new Item     (new FabricItemSettings().group(ItemGroup.MISC));
+	public static final Item  TINY_CRUSHED_COAL = new Item     (new FabricItemSettings().group(ItemGroup.MISC));
+	public static final Item  QUILL             = new Item     (new FabricItemSettings().group(ItemGroup.TOOLS));
 
 	@Override
 	public void onInitialize() {
@@ -29,13 +32,13 @@ public class NathansBrewery implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		Registry.register(Registry.ITEM, new Identifier("nathansbrewery", "steel_ingot"), STEEL_INGOT);
-		Registry.register(Registry.ITEM, new Identifier("nathansbrewery", "steel_nugget"), STEEL_NUGGET);
-		Registry.register(Registry.BLOCK, new Identifier("nathansbrewery", "steel_block"), STEEL_BLOCK);
-		Registry.register(Registry.ITEM, new Identifier("nathansbrewery", "steel_block"), new BlockItem(STEEL_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-		Registry.register(Registry.ITEM, new Identifier("nathansbrewery", "crushed_coal"), CRUSHED_COAL);
-		Registry.register(Registry.ITEM, new Identifier("nathansbrewery", "tiny_crushed_coal"), TINY_CRUSHED_COAL);
-		Registry.register(Registry.ITEM, new Identifier("nathansbrewery", "quill"), QUILL);
+		Registry.register(Registry.ITEM,  new Identifier(MODID, "steel_ingot"),       STEEL_INGOT);
+		Registry.register(Registry.ITEM,  new Identifier(MODID, "steel_nugget"),      STEEL_NUGGET);
+		Registry.register(Registry.BLOCK, new Identifier(MODID, "steel_block"),       STEEL_BLOCK);
+		Registry.register(Registry.ITEM,  new Identifier(MODID, "steel_block"),       STEEL_BLOCK_i);
+		Registry.register(Registry.ITEM,  new Identifier(MODID, "crushed_coal"),      CRUSHED_COAL);
+		Registry.register(Registry.ITEM,  new Identifier(MODID, "tiny_crushed_coal"), TINY_CRUSHED_COAL);
+		Registry.register(Registry.ITEM,  new Identifier(MODID, "quill"),             QUILL);
 		System.out.println("Hello Fabric world!");
 	}
 }
