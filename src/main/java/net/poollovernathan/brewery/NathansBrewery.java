@@ -25,6 +25,7 @@ public class NathansBrewery implements ModInitializer {
 	public static final Item  CRUSHED_COAL      = new Item     (new FabricItemSettings().group(ItemGroup.MISC));
 	public static final Item  TINY_CRUSHED_COAL = new Item     (new FabricItemSettings().group(ItemGroup.MISC));
 	public static final Item  QUILL             = new Item     (new FabricItemSettings().group(ItemGroup.TOOLS));
+	public static final Item  DIAGRAM           = new Item     (new FabricItemSettings().group(ItemGroup.MATERIALS));
 
 	@Override
 	public void onInitialize() {
@@ -39,6 +40,7 @@ public class NathansBrewery implements ModInitializer {
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "crushed_coal"),      CRUSHED_COAL);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "tiny_crushed_coal"), TINY_CRUSHED_COAL);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "quill"),             QUILL);
+		Registry.register(Registry.ITEM,  new Identifier(MODID, "diagram"),           DIAGRAM);
 		System.out.println("Hello Fabric world!");
 	}
 }
