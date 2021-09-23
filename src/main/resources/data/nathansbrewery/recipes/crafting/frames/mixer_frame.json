@@ -1,0 +1,9 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["CC ", " CP", "CC "],
+  "key": {
+    "C": {"item": "minecraft:cyan_concrete"},
+    "P": {"item": "nathansbrewery:redstone_plug"}
+  },
+  "result": {"item": "nathansbrewery:mixer_frame"}
+}
