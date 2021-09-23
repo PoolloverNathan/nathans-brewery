@@ -1,0 +1,9 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "nathansbrewery:mixer_frame"},
+    {"item": "nathansbrewery:stone_bowl"},
+    {"item": "nathansbrewery:whisk"}
+  ],
+  "result": {"item": "nathansbrewery:mixer"}
+}
