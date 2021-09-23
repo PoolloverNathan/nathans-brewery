@@ -1,0 +1,9 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" R ", "RIR", " R "],
+  "key": {
+    "I": {"tag": "fabric:iron_ingots"},
+    "R": {"item": "nathansbrewery:iron_rod"}
+  },
+  "result": {"item": "nathansbrewery:whisk"}
+}

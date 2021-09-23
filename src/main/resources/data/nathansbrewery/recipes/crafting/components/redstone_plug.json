@@ -1,0 +1,10 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["SR ", "SCR", "SR "],
+  "key": {
+    "S": {"item": "minecraft:smooth_stone"},
+    "C": {"tag": "fabric:copper_ingots"},
+    "R": {"item": "minecraft:redstone"}
+  },
+  "result": {"item": "nathansbrewery:redstone_plug"}
+}
