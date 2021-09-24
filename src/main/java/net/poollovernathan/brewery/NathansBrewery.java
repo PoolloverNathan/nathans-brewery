@@ -22,6 +22,10 @@ public class NathansBrewery implements ModInitializer {
 	public static final Item  STEEL_NUGGET      = new Item     (new FabricItemSettings().group(ItemGroup.MISC));
 	public static final Block STEEL_BLOCK       = new Block    (FabricBlockSettings.of(Material.METAL).hardness(10).breakByTool(FabricToolTags.PICKAXES, 2));
 	public static final Item  STEEL_BLOCK_i     = new BlockItem(STEEL_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
+	public static final Block MIXER             = new Block    (FabricBlockSettings.of(Material.METAL).hardness(10).breakByTool(FabricToolTags.PICKAXES, 2));
+	public static final Item  MIXER_i           = new BlockItem(MIXER, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
+	public static final Block MIXER_FRAME       = new Block    (FabricBlockSettings.of(Material.METAL).hardness(10).breakByTool(FabricToolTags.PICKAXES, 2));
+	public static final Item  MIXER_FRAME_i     = new BlockItem(MIXER, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
 	public static final Item  CRUSHED_COAL      = new Item     (new FabricItemSettings().group(ItemGroup.MISC));
 	public static final Item  TINY_CRUSHED_COAL = new Item     (new FabricItemSettings().group(ItemGroup.MISC));
 	public static final Item  QUILL             = new Item     (new FabricItemSettings().group(ItemGroup.TOOLS));
@@ -37,6 +41,10 @@ public class NathansBrewery implements ModInitializer {
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "steel_nugget"),      STEEL_NUGGET);
 		Registry.register(Registry.BLOCK, new Identifier(MODID, "steel_block"),       STEEL_BLOCK);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "steel_block"),       STEEL_BLOCK_i);
+		Registry.register(Registry.BLOCK, new Identifier(MODID, "mixer"),             MIXER);
+		Registry.register(Registry.ITEM,  new Identifier(MODID, "mixer"),             MIXER_i);
+		Registry.register(Registry.BLOCK, new Identifier(MODID, "mixer_frame"),       MIXER_FRAME);
+		Registry.register(Registry.ITEM,  new Identifier(MODID, "mixer_frame"),       MIXER_FRAME_i);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "crushed_coal"),      CRUSHED_COAL);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "tiny_crushed_coal"), TINY_CRUSHED_COAL);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "quill"),             QUILL);
