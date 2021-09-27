@@ -1,0 +1,7 @@
+{
+  "replace": "false",
+  "values": [
+    "#c:drinkable_potions",
+    "minecraft:milk_bucket"
+  ]
+}
