@@ -11,6 +11,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+
 public class SimpleDirectional extends HorizontalFacingBlock {
 
     public SimpleDirectional(Settings settings) {
@@ -23,8 +24,8 @@ public class SimpleDirectional extends HorizontalFacingBlock {
         stateManager.add(Properties.HORIZONTAL_FACING);
     }
 
-    @Override
-    public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext ctx) {
+    public VoxelShape getOutlineShape(BlockView world, BlockPos pos, ShapeContext context) {
+        BlockState state = world.getBlockState(pos);
         Direction dir = state.get(FACING);
         switch(dir) {
             case NORTH:

@@ -1,6 +1,5 @@
 package net.poollovernathan.brewery.machines;
 
-import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
@@ -18,7 +17,7 @@ public class Mixer extends SimpleDirectional {
     }
 
     @Override
-    public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext ctx) {
+    public VoxelShape getOutlineShape(BlockView view, BlockPos pos, ShapeContext ctx) {
         return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 1.0f, 2.0f, 1.0f);
     }
 
