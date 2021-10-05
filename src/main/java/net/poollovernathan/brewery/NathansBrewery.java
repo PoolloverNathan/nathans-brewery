@@ -48,6 +48,7 @@ public class NathansBrewery implements ModInitializer {
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "tiny_crushed_coal"), TINY_CRUSHED_COAL);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "quill"),             QUILL);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "diagram"),           DIAGRAM);
+		registerSimpleItem("copper_wire");
 
 		Registry.register(Registry.STATUS_EFFECT, new Identifier(MODID, "exp"), new Exp());
 		System.out.println("Hello Fabric world!");
