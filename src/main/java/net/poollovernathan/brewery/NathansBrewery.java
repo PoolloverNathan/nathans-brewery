@@ -57,4 +57,12 @@ public class NathansBrewery implements ModInitializer {
 		Item item = new Item(settings);
 		Registry.register(Registry.ITEM, new Identifier(MODID, name), item);
 	}
+
+	private void registerSimpleItem(String name, ItemGroup group) {
+		registerSimpleItem(name, new FabricItemSettings().group(group));
+	}
+
+	private void registerSimpleItem(String name) {
+		registerSimpleItem(name, ItemGroup.MISC);
+	}
 }
