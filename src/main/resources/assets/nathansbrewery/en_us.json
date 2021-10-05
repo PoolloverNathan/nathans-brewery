@@ -1,4 +1,8 @@
 {
-  "item.nathansbrewery.crushed_coal": "Crushed Coal", "item.nathansbrewery.steel_ingot": "Steel Ingot", "item.nathansbrewery.steel_nugget": "Steel Nugget", "item.nathansbrewery.diagram": "Diagram", "item.nathansbrewery.tiny_crushed_coal": "Tiny Crushed Coal", "item.nathansbrewery.copper_wire": "Copper Wire"
-
+  "item.nathansbrewery.crushed_coal": "Crushed Coal",
+  "item.nathansbrewery.steel_ingot": "Steel Ingot",
+  "item.nathansbrewery.steel_nugget": "Steel Nugget",
+  "item.nathansbrewery.diagram": "Diagram",
+  "item.nathansbrewery.tiny_crushed_coal": "Tiny Crushed Coal",
+  "item.nathansbrewery.copper_wire": "Copper Wire"
 }
