@@ -14,3 +14,6 @@ assignees: ''
 
 **Behavior**
 *What should the item do?*
+
+**Recipes**
+*How do you craft it?*
