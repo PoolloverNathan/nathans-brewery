@@ -52,4 +52,9 @@ public class NathansBrewery implements ModInitializer {
 		Registry.register(Registry.STATUS_EFFECT, new Identifier(MODID, "exp"), new Exp());
 		System.out.println("Hello Fabric world!");
 	}
+
+	private void registerSimpleItem(String name, FabricItemSettings settings) {
+		Item item = new Item(settings);
+		Registry.register(Registry.ITEM, new Identifier(MODID, name), item);
+	}
 }
