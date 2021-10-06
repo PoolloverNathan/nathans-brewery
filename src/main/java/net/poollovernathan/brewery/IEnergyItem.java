@@ -8,7 +8,6 @@ public interface IEnergyItem {
      boolean insertEnergyBlock(int amount, boolean dry);
      boolean extractEnergyBlock(int amount, boolean dry);
      int transferEnergy(IEnergyItem destination, boolean dry);
-     boolean transferEnergyBlock(IEnergyItem destination, boolean dry);
      int peekEnergy();
      int getMaxEnergy();
 }
