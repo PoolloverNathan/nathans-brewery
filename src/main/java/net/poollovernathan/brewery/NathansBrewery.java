@@ -36,18 +36,19 @@ public class NathansBrewery implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		Registry.register(Registry.ITEM,  new Identifier(MODID, "steel_ingot"),       STEEL_INGOT);
-		Registry.register(Registry.ITEM,  new Identifier(MODID, "steel_nugget"),      STEEL_NUGGET);
+
 		Registry.register(Registry.BLOCK, new Identifier(MODID, "steel_block"),       STEEL_BLOCK);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "steel_block"),       STEEL_BLOCK_i);
 		Registry.register(Registry.BLOCK, new Identifier(MODID, "mixer"),             MIXER);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "mixer"),             MIXER_i);
 		Registry.register(Registry.BLOCK, new Identifier(MODID, "mixer_frame"),       MIXER_FRAME);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "mixer_frame"),       MIXER_FRAME_i);
-		Registry.register(Registry.ITEM,  new Identifier(MODID, "crushed_coal"),      CRUSHED_COAL);
-		Registry.register(Registry.ITEM,  new Identifier(MODID, "tiny_crushed_coal"), TINY_CRUSHED_COAL);
-		Registry.register(Registry.ITEM,  new Identifier(MODID, "quill"),             QUILL);
-		Registry.register(Registry.ITEM,  new Identifier(MODID, "diagram"),           DIAGRAM);
+		registerSimpleItem("steel_ingot");
+		registerSimpleItem("steel_nugget");
+		registerSimpleItem("crushed_coal");
+		registerSimpleItem("tiny_crushed_coal");
+		registerSimpleItem("quill");
+		registerSimpleItem("diagram");
 		registerSimpleItem("copper_wire");
 		registerSimpleItem("copper_plate");
 		registerSimpleItem("copper_rod");
