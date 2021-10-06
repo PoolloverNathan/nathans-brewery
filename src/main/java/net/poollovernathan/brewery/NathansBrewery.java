@@ -49,6 +49,18 @@ public class NathansBrewery implements ModInitializer {
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "quill"),             QUILL);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "diagram"),           DIAGRAM);
 		registerSimpleItem("copper_wire");
+		registerSimpleItem("copper_plate");
+		registerSimpleItem("copper_rod");
+		registerSimpleItem("crushed_iron");
+		registerSimpleItem("crushed_tin");
+		registerSimpleItem("depleted_redstone_battery");
+		registerSimpleItem("full_redstone_battery");
+		registerSimpleItem("redstone_clump");
+		registerSimpleItem("tin_ingot");
+		registerSimpleItem("tin_nugget");
+		registerSimpleItem("tin_plate");
+		registerSimpleItem("tin_rod");
+		registerSimpleItem("written_paper");
 
 		Registry.register(Registry.STATUS_EFFECT, new Identifier(MODID, "exp"), new Exp());
 		System.out.println("Hello Fabric world!");
