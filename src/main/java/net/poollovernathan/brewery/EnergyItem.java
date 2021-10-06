@@ -35,4 +35,10 @@ class EnergyItem extends Item implements IEnergyItem {
     extractEnergy(transfer, dry);
     return transfer;
   }
+  public int peekEnergy() {
+    return energy;
+  }
+  public int getMaxEnergy() {
+    return maxEnergy;
+  }
 }
