@@ -1,6 +1,4 @@
 package net.poollovernathan.brewery;
-import javafx.util.Pair;
-
 
 public interface IEnergyItem {
      int insertEnergy(int amount, boolean dry);
