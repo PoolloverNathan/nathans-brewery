@@ -29,7 +29,7 @@ class EnergyItem extends Item implements IEnergyItem {
     
   }
   public int transferEnergy(IEnergyItem destination, boolean dry) {
-    int transfer = destination.peekEnergy() - destination.;
+    int transfer = destination.peekEnergy() - destination.getMaxEnergy();
     if (transfer > energy) transfer = energy;
     transfer = destination.insertEnergy(transfer, dry);
     extractEnergy(transfer, dry);
