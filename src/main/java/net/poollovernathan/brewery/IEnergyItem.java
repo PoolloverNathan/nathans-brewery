@@ -8,4 +8,4 @@ public interface IEnergyItem {
      int transferEnergy(IEnergyItem destination, boolean dry);
      int peekEnergy();
      int getMaxEnergy();
-}
+} 
