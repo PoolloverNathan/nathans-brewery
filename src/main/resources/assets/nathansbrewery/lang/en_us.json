@@ -4,5 +4,18 @@
   "item.nathansbrewery.steel_nugget": "Steel Nugget",
   "item.nathansbrewery.diagram": "Diagram",
   "item.nathansbrewery.tiny_crushed_coal": "Tiny Crushed Coal",
-  "item.nathansbrewery.copper_wire": "Copper Wire"
+  "item.nathansbrewery.copper_wire": "Copper Wire",
+  "item.nathansbrewery.copper_plate": "Copper Plate",
+  "item.nathansbrewery.copper_rod": "Copper Rod",
+  "item.nathansbrewery.crushed_iron": "Crushed Iron",
+  "item.nathansbrewery.crushed_tin": "Crushed Tin",
+  "item.nathansbrewery.depleted_redstone_battery": "Depleted Redstone Battery",
+  "item.nathansbrewery.full_redstone_battery": "Redstone Battery",
+  "item.nathansbrewery.quill": "Quill",
+  "item.nathansbrewery.redstone_clump": "Redstone Clump",
+  "item.nathansbrewery.tin_ingot": "Tin Ingot",
+  "item.nathansbrewery.tin_nugget": "Tin Nugget",
+  "item.nathansbrewery.tin_plate": "Tin Plate",
+  "item.nathansbrewery.tin_rod": "Tin Rod",
+  "item.nathansbrewery.written_paper": "Written Paper"
 }
