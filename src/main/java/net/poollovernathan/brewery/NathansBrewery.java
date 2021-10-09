@@ -21,9 +21,9 @@ public class NathansBrewery implements ModInitializer {
 
 	public static final Block STEEL_BLOCK       = new Block    (FabricBlockSettings.of(Material.METAL).hardness(10).breakByTool(FabricToolTags.PICKAXES, 2));
 	public static final Item  STEEL_BLOCK_i     = new BlockItem(STEEL_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
-	public static final Block MIXER             = new Mixer    (FabricBlockSettings.of(Material.METAL).hardness(8));
+	public static final Block MIXER             = new Mixer    (FabricBlockSettings.of(Material.METAL).hardness(8).nonOpaque());
 	public static final Item  MIXER_i           = new BlockItem(MIXER, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
-	public static final Block MIXER_FRAME       = new Block    (FabricBlockSettings.of(Material.METAL).hardness(4));
+	public static final Block MIXER_FRAME       = new Block    (FabricBlockSettings.of(Material.METAL).hardness(4).nonOpaque());
 	public static final Item  MIXER_FRAME_i     = new BlockItem(MIXER_FRAME, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
 	@Override
 	public void onInitialize() {
