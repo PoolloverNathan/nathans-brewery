@@ -13,6 +13,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.poollovernathan.brewery.machines.*;
 import net.poollovernathan.brewery.effects.*;
+import static net.poollovernathan.brewery.Helpers.*;
 
 public class NathansBrewery implements ModInitializer {
 
@@ -30,7 +31,7 @@ public class NathansBrewery implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-
+		Helpers.MODID = MODID;
 		Registry.register(Registry.BLOCK, new Identifier(MODID, "steel_block"),       STEEL_BLOCK);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "steel_block"),       STEEL_BLOCK_i);
 		Registry.register(Registry.BLOCK, new Identifier(MODID, "mixer"),             MIXER);
@@ -59,18 +60,5 @@ public class NathansBrewery implements ModInitializer {
 
 		Registry.register(Registry.STATUS_EFFECT, new Identifier(MODID, "exp"), new Exp());
 		System.out.println("Hello Fabric world!");
-	}
-
-	private void registerSimpleItem(String name, FabricItemSettings settings) {
-		Item item = new Item(settings);
-		Registry.register(Registry.ITEM, new Identifier(MODID, name), item);
-	}
-
-	private void registerSimpleItem(String name, ItemGroup group) {
-		registerSimpleItem(name, new FabricItemSettings().group(group));
-	}
-
-	private void registerSimpleItem(String name) {
-		registerSimpleItem(name, ItemGroup.MISC);
 	}
 }
