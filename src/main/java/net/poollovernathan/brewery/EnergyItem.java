@@ -1,10 +1,14 @@
 package net.poollovernathan.brewery;
 import net.minecraft.item.Item;
-import net.poollovernathan.brewery.IEnergyItem;
 
 class EnergyItem extends Item implements IEnergyItem {
   private int energy;
   private int maxEnergy;
+
+  public EnergyItem(Settings settings) {
+    super(settings);
+  }
+
   public int insertEnergy(int amount, boolean dry) {
     int energyLeft = maxEnergy - energy;
     if (amount > energyLeft) amount = energyLeft;
