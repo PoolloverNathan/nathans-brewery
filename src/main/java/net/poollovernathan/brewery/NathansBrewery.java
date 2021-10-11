@@ -38,6 +38,8 @@ public class NathansBrewery implements ModInitializer {
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "mixer"),             MIXER_i);
 		Registry.register(Registry.BLOCK, new Identifier(MODID, "mixer_frame"),       MIXER_FRAME);
 		Registry.register(Registry.ITEM,  new Identifier(MODID, "mixer_frame"),       MIXER_FRAME_i);
+		// Do NOT remove the following comment! It is important for register.py
+		/* (!py registerhere) */
 		registerSimpleItem("steel_ingot");
 		registerSimpleItem("steel_nugget");
 		registerSimpleItem("crushed_coal");
